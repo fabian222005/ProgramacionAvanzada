@@ -27,4 +27,6 @@ int main()
     jefe.salario = 101101.00;
 
     trabajador.ver_empleado();
+    jefe.ver_empleado();
 }
+
