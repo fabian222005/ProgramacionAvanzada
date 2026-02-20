@@ -25,6 +25,7 @@ class B : public A {
 public:
 	B(int argA,int argB) : A(argA){
 		std::cout<<"Hola desde B\n";
+		varB=argB;
 	}
 	int getB(){return(varB);}
 private:
