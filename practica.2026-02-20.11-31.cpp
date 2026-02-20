@@ -23,13 +23,18 @@ int varA;
 
 class B : public A {
 public:
-	B(int argA) : A(argA){
+	B(int argA,int argB) : A(argA){
 		std::cout<<"Hola desde B\n";
 	}
+	int getB(){return(varB);}
+private:
+	int varB;
 };
 
 int main(){
 A testA(10);
-std::cout<<"varA: "<<testA.getA();
-B testB(101);
+std::cout<<"varA: "<<testA.getA()<<std::endl;
+B testB(101,102);
+std::cout<<"B class varA: "<<testB.getA()<<std::endl;
+std::cout<<"B class varB: "<<testB.getB()<<std::endl;
 }
