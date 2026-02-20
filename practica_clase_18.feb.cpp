@@ -1,3 +1,5 @@
+
+//Clases con acceso directo a sus niembros
 #include <iostream>
 #include <string.h>
 using namespace std;
