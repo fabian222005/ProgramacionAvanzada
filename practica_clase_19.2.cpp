@@ -1,3 +1,13 @@
+/************************
+Instituto Tecnologico de Durango
+Departamento Metal-Mecanica
+
+Programacion Avanzada 7U
+Fabian Quiñones Escarzaga 23040871
+Ing. Mario Gerardo Hernandez Marines
+2026-02-20.11-23
+Practica clasesConstructor
+************************/
 #include <iostream>
 #include <string.h>
 
