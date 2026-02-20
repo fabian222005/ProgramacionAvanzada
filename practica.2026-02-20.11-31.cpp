@@ -22,9 +22,9 @@ int varA;
 };
 
 class B : public A {
-	B(int argA){
+public:
+	B(int argA) : A(argA){
 		std::cout<<"Hola desde B\n";
-		A(argA);
 	}
 };
 
