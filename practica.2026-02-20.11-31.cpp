@@ -14,11 +14,11 @@ class A {
 public:
 A(int argA){
 std::cout<<"Hola desde A\n";
-a=argA;
+varA=argA;
 }
 int getA(){return(A);}
 private:
-int argA;
+int varA;
 };
 
 int main(){
