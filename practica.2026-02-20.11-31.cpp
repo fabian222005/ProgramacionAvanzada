@@ -21,8 +21,15 @@ private:
 int varA;
 };
 
+class B : public A {
+	B(int argA){
+		std::cout<<"Hola desde B\n";
+		A(argA);
+	}
+};
+
 int main(){
 A testA(10);
-testA.getA();
-
+std::cout<<"varA: "<<testA.getA();
+B testB(101);
 }
