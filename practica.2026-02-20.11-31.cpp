@@ -16,7 +16,7 @@ A(int argA){
 std::cout<<"Hola desde A\n";
 varA=argA;
 }
-int getA(){return(A);}
+int getA(){return(varA);}
 private:
 int varA;
 };
