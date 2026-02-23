@@ -28,7 +28,7 @@ class Empleado{
 		void ImprimirInfo();
 		void SetNombre(char* nombre) 
 			{
-				m_nombre = new char[strlen(nombre)];
+				m_nombre = new char[strlen(nombre)+1];
 				if(m_nombre != NULL)
 					strcpy(m_nombre,nombre);
 			};
