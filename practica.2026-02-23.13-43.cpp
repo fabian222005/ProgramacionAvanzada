@@ -10,14 +10,14 @@ Ing. Mario Gerardo Hernandez Marines
 Practica Encapsulamiento y De-encapsulamiento
 ************************/
 #include <iostream>
-#include <string.h>
+
 
 using namespace std;
 
 class Empleado{
 	private:
 		
-		char* m_nombre; //Alerternativa: char m_nombre[30] o string m_nombre;
+		char* m_nombre;
 		char* m_departamento;
 		char* m_posicion;
 		long m_salario;
@@ -25,7 +25,7 @@ class Empleado{
 	public:
 	
 	void Imprimir(Empleado infoEmpleado);
-		void ImprimirInfo();
+//		void ImprimirInfo();
 		void SetNombre(char* nombre) 
 			{
 				m_nombre = new char[strlen(nombre)+1];
@@ -33,9 +33,17 @@ class Empleado{
 					strcpy(m_nombre,nombre);
 			};
 		void SetDepartamento(char* departamento)
-			{ m_departamento = departamento;};
+			{
+				m_departamento = new char[strlen(departamento)+1];
+				if(m_departamento != NULL)
+					strcpy(m_departamento,departamento);
+			};
 		void SetPosicion ( char* posicion ) 
-			{ m_posicion = posicion; }
+			{
+				m_posicion = new char[strlen(posicion)+1];
+				if(m_posicion != NULL)
+					strcpy(m_posicion,posicion);
+			};
     	void SetSalario ( long salario ) 
 			{ m_salario = salario; }
     	const char* GetNombre() 
