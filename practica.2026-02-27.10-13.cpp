@@ -5,6 +5,12 @@
 using namespace std;
 
 #define PROPORTION_16_9 16.0f/9.0f
+#define PROPORTION_4_3   4.0f/3.0f
+
+class IODevice{
+  public:
+    IODevice(uint16_t addr, Computer* parent_computer )
+};
 
 class display_properties{
     public:
@@ -14,9 +20,9 @@ class display_properties{
             color_bitDepth = int(sqrt(range)); // 8, 16 bits
             m_name = MonitorName;
         }
-        display_properties(int x_pix,int proportion, string MonitorName, int range = 256){
+        display_properties(int x_pix,float proportion, string MonitorName, int range = 256){
             x_pixels = x_pix;
-            y_pixels = x_pix * proportion;
+            y_pixels = x_pix /proportion;
             color_bitDepth = int(sqrt(range)); // 8, 16 bits
             m_name = MonitorName;
         }
@@ -32,6 +38,7 @@ void display_properties::get_display_properties(){
     cout << "Resolución: "<<x_pixels << "px x "<<y_pixels <<"px"<<endl;
     cout << "Bits: "<<color_bitDepth<<endl;
 }
+
 
 int main(){
 
