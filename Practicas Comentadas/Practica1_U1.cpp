@@ -1,3 +1,14 @@
+/************************
+Instituto Tecnologico de Durango
+Departamento Metal-Mecanica
+
+Programacion Avanzada 7U
+Fabian Quiñones Escarzaga 23040871
+Ing. Mario Gerardo Hernandez Marines
+2026-03-03
+Practica 1 U1 Regiones de Acceso
+************************/
+
 /************
 Premisa:
 El cliente tiene saldo en el banco y decide disponer, para lo cual
